@@ -1,5 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
 * {
   margin: 0;
   padding: 0;
+}
+
+:root {
+  --card-color: #fff;
+  --text-color: rgb(59, 59, 59);
+  --text-color-alt: rgba(65, 65, 65, 0.932);
+  --text-color-button: #fff;
+  --text-color-icon: rgba(114, 114, 114, 0.932);
+  --accent-color: #317daf;
+  --accent-color-alt: #7ae0f7;
+  --bg-top: #7ae0f7;
+  --bg-bottom: #317daf;
+}
+
+body {
+  background-image: linear-gradient(var(--bg-top), var(--bg-bottom));
+  font-family: "Rubik", sans-serif;
+  color: white;
+  min-height: 100vh;
 }
