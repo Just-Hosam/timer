@@ -1,1 +1,6 @@
-<p>navbar works!</p>
+<nav class="navbar">
+  <button (click)="handleClick()" *ngIf="isTimer" routerLink="/settings">
+    Settings
+  </button>
+  <button (click)="handleClick()" *ngIf="!isTimer" routerLink="/">Timer</button>
+</nav>
