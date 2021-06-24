@@ -1,1 +1,12 @@
-<p>timer works!</p>
+<div class="timer">
+  <p class="timer__time">
+    {{ formatTime(currentTime) }}
+  </p>
+  <div class="timer__ctrl">
+    <button class="timer__ctrl__btn" (click)="handleReset()">reset</button>
+    <button class="timer__ctrl__btn" (click)="handlePlayPause()">
+      {{ isPlaying ? "pause" : "play" }}
+    </button>
+    <button class="timer__ctrl__btn" (click)="handleSkip()">skip</button>
+  </div>
+</div>
